@@ -4,20 +4,20 @@ function choose(playerChoice){
   if(playerChoice == computerChoice){
     console.log("tie")
     result.innerHTML = `
-      <h3>The computer chose ${computerChoice}, so its a tie!</h3>
+      <h2>The computer chose ${computerChoice}, so its a tie!</h2>
       `
   }
   else if(playerChoice == "scissors"){
     if(computerChoice == "rock"){
       console.log("lose")
       result.innerHTML = `
-      <h3>The computer chose ${computerChoice}, so you lose!</h3>
+      <h2>The computer chose ${computerChoice}, so you lose!</h2>
       `
     }
     else{
       console.log("win")
       result.innerHTML = `
-      <h3>The computer chose ${computerChoice}, so you win!</h3>
+      <h2>The computer chose ${computerChoice}, so you win!</h2>
       `
     }
   }
@@ -25,14 +25,14 @@ function choose(playerChoice){
     if(computerChoice == "rock"){
       console.log("win")
       result.innerHTML = `
-      <h3>The computer chose ${computerChoice}, so you win!</h3>
+      <h2>The computer chose ${computerChoice}, so you win!</h2>
       `
     }
     else{
       if(computerChoice == "scissors"){
         console.log("lose")
         result.innerHTML = `
-        <h3>The computer chose ${computerChoice}, so you lose!</h3>
+        <h2>The computer chose ${computerChoice}, so you lose!</h2>
       `
       }
     }
@@ -41,14 +41,14 @@ function choose(playerChoice){
     if(computerChoice == "paper"){
       console.log("lose")
       result.innerHTML = `
-      <h3>The computer chose ${computerChoice}, so you lose!</h3>
+      <h2>The computer chose ${computerChoice}, so you lose!</h2>
       `
     }
     else{
       if(computerChoice == "scissors"){
         console.log("win")
         result.innerHTML = `
-        <h3>The computer chose ${computerChoice}, so you win!</h3>
+        <h2>The computer chose ${computerChoice}, so you win!</h2>
       `
       }
     }
