@@ -10,41 +10,47 @@
 
 <body>
   <header class="container-fluid">
-    <div class="row text-center bg-info">
+    <div class="row text-center text-light bg-primary">
       <div class="col my-2">
-        <h2>Rock Paper Scissors</h2>
+        <h2>Rock, Paper, Scissors</h2>
       </div>
     </div>
   </header>
 
   <main class="container">
-    <div class="row text-center">
-      <div class="col-12 mt-4">
+    <div class="row text-center text-light">
+      <div class="col-12 my-4">
         <h3>Choose Your Weapon:</h3>
       </div>
-      <div class="col-4">
+      <div class="col-12 col-md-4">
         <img src="rock.jpg" alt=".//placehold.it/200x200/">
         <br>
-        <button type="button" class="btn btn-primary" onclick="choose('rock')">Rock</button>
+        <button type="button" class="btn btn-danger" onclick="choose('rock')">Rock</button>
       </div>
-      <div class="col-4">
+      <div class="col-12 col-md-4">
         <img src="paper.jpg" alt=".//placehold.it/200x200/">
         <br>
-        <button type="button" class="btn btn-primary" onclick="choose('paper')">Paper</button>
+        <button type="button" class="btn btn-danger" onclick="choose('paper')">Paper</button>
       </div>
-      <div class="col-4">
+      <div class="col-12 col-md-4">
         <img src="scissors.jpg" alt=".//placehold.it/200x200/">
         <br>
-        <button type="button" class="btn btn-primary" onclick="choose('scissors')">Scissors</button>
+        <button type="button" class="btn btn-danger" onclick="choose('scissors')">Scissors</button>
       </div>
       
-      <div class="col-12 mt-4" id="result">
+      <div class="col-12 mt-4 text-light" id="result">
         <h3></h3>
       </div>
     </div>
   </main>
 
-  <footer></footer>
+  <footer class="container-fluid">
+    <div class="row bg-primary text-center text-light">
+      <div class="col my-2">
+      <h4>Thanks for playing!</h4>
+    </div>
+    </div>
+  </footer>
 
 <script src="app.js"></script>
 </body>

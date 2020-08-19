@@ -1,42 +1,38 @@
-// let weapons = ["rock", "paper", "scissors"]
-
-
-
 function choose(playerChoice){  
   let result = document.getElementById("result")
   let computerChoice = getComputerChoice();
   if(playerChoice == computerChoice){
     console.log("tie")
-    result.innerText = `
-      The computer chose ${computerChoice}, so its a tie!
+    result.innerHTML = `
+      <h3>The computer chose ${computerChoice}, so its a tie!</h3>
       `
   }
   else if(playerChoice == "scissors"){
     if(computerChoice == "rock"){
       console.log("lose")
-      result.innerText = `
-      The computer chose ${computerChoice}, so you lose!
+      result.innerHTML = `
+      <h3>The computer chose ${computerChoice}, so you lose!</h3>
       `
     }
     else{
       console.log("win")
-      result.innerText = `
-      The computer chose ${computerChoice}, so you win!
+      result.innerHTML = `
+      <h3>The computer chose ${computerChoice}, so you win!</h3>
       `
     }
   }
   else if(playerChoice == "paper"){
     if(computerChoice == "rock"){
       console.log("win")
-      result.innerText = `
-      The computer chose ${computerChoice}, so you win!
+      result.innerHTML = `
+      <h3>The computer chose ${computerChoice}, so you win!</h3>
       `
     }
     else{
       if(computerChoice == "scissors"){
         console.log("lose")
-        result.innerText = `
-      The computer chose ${computerChoice}, so you lose!
+        result.innerHTML = `
+        <h3>The computer chose ${computerChoice}, so you lose!</h3>
       `
       }
     }
@@ -44,15 +40,15 @@ function choose(playerChoice){
   else{
     if(computerChoice == "paper"){
       console.log("lose")
-      result.innerText = `
-      The computer chose ${computerChoice}, so you lose!
+      result.innerHTML = `
+      <h3>The computer chose ${computerChoice}, so you lose!</h3>
       `
     }
     else{
       if(computerChoice == "scissors"){
         console.log("win")
-        result.innerText = `
-      The computer chose ${computerChoice}, so you win!
+        result.innerHTML = `
+        <h3>The computer chose ${computerChoice}, so you win!</h3>
       `
       }
     }
@@ -70,6 +66,4 @@ function getComputerChoice() {
   else{
     return "scissors"
   }
-  // let weapon = weapons[index]
-  // play(weapons)
 }
